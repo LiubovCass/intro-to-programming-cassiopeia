@@ -1,0 +1,186 @@
+* {
+   
+  border:2px solid red;
+  font-family:"Fuzzy Bubbles";
+  font-size: large;
+   
+}
+    
+   
+
+body {
+  padding: 30px;
+  padding-top: 15px;
+
+  background-color: #BFC7D9;
+  color: #0D0D0D;
+
+ 
+}
+
+h2 {
+    color:dodgerblue;
+    font-size: larger;
+    font-weight: bold;
+}
+
+h1 {
+  color: #0D0D0D;
+  
+  font-size:xx-large;
+  font-style: italic;
+}
+p {
+  margin-bottom: 1rem;
+}
+   
+section#myName {
+  display: block;
+    background-color: #646E8C;
+   width: 100%;
+    text-align: center; 
+   
+   
+   }
+       
+section#picture {
+  float: right;
+  position: static;
+  padding:10px 0;
+    
+  }
+  
+  nav {
+    
+    text-align:center;
+    display:inline-block;
+    width: 100%;
+ 
+    
+  }
+  .menu {
+    
+    color: dodgerblue;
+    list-style: none;
+    display: inline-block;
+
+
+  }
+
+
+
+  
+section#about {
+    margin: 10px;
+    padding: 10px;
+     
+
+   }
+section#experience {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+  }
+section#skills {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+section#leaveMessage h2, label {
+    color:red;
+    font-size:x-large;
+    
+}
+
+
+
+input[type=text], select {
+    font-family: 'Times New Roman', Times, serif;
+    color: #0D0D0D;
+    font-size: larger;
+    padding: 5px 10px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 1px whitesmoke;
+  }
+  input[type=email], select {
+    font-family: 'Times New Roman', Times, serif;
+    color: #0D0D0D;
+    font-size: larger;
+    padding: 5px 10px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 1px whitesmoke;
+  }
+
+  textarea[name=message], select {
+    font-family: 'Times New Roman', Times, serif;
+    color: #0D0D0D;
+    font-size:large;
+    padding: 5px 10px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 1px whitesmoke;
+
+  }
+  button {
+    background-color:#646E8C;
+    color: #BFC7D9;
+    font-size:small;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 3px;
+    margin-right: 2px;
+    box-shadow: 1px 1px 1px whitesmoke;
+
+  }
+  
+  section#messages {
+   width: 100%;
+   
+
+  }
+
+
+  footer {
+    text-align: center;
+    padding:10px 0;
+    background-color: #646E8C;
+    color:#0D0D0D;
+    width: 100%;
+    font-size: 20px;
+   
+
+   
+    
+
+
+  }
+
+  @media only screen and (max-width: 480px) {
+    body {
+    font-size: 20px;
+    }
+    }
+    @media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 812px) 
+and (-webkit-min-device-pixel-ratio: 3) {
+
+} 

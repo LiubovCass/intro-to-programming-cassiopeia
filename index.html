@@ -3,35 +3,36 @@
     <head>
         <title> My Very First Webpage </title>
         <meta charset="UTF-8">
-
-    </head>
+        <link rel="stylesheet" href="css/index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+      </head>
     <body>
-      <header>
-        <section>
-            <h1><em>Liubov Rodin </em></h1>
-        </section>
-        
+        <section id="myName">
+            <h1>Liubov Rodin</h1>
+          </section>
+        <section id="picture">
        <img src="img/IMG_6157.jpeg" alt="my portret"
-       width="400" 
-       height="600"/>
+       width="200" 
+       height=auto/>
+        </section>
 
         <nav class="menu">
             <ul>
-              <li><a href="#about">About</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#connect">Connect</a></li>
+              <li class="menu"><a href="#about">About</a></li>
+              <li class="menu"><a href="#experience">Experience</a></li>
+              <li class="menu"><a href="#skills">Skills</a></li>
+              <li class="menu"><a href="#connect">Connect</a></li>
             </ul>
           </nav>
-      </header>
-          
+      <main>    
+     
         <section id = "about">
           <h2> "About"</h2> 
           <p> I am full time mom more then 8 years.</p>
-          <p> I have two master degree in physics and finance.</p>
-          <p> And now I want to try myself in IT. This is my fist step in it.        </p>         
+          <p> I have two master degrees in physics and finance.</p>
+          <p> And now I want to try myself in IT. This is my first step in it.        </p>         
         </section>
-       <section id="experience">
+        <section id="experience">
           <h2> "Experience"</h2>
           <ul>
             <li> My future project 1</li> 
@@ -53,7 +54,7 @@
           <p><a href="https://github.com/LiubovCass" target="_blank">GitHub</a> </p>
        </section>
        
-       <section>
+       <section id="leaveMessage">
         <h2>"Leave a Message"</h2>
         <form name="leave_message" id="myForm"> 
             <label for="name">Name</label><br>
@@ -61,28 +62,32 @@
             <label for="email">Email</label><br>
               <input type="email" name="email" required true><br>
             <label for="message">Message</label><br>
-              <textarea name="message" required true></textarea><br>
+              <textarea name="message" required true cols="30" rows="10"></textarea><br>
             
               <button type="submit">submit</button><br>
         </form>
-       </section>
+            </section>
+    
 
        <section id="messages">
-        <h2>"Messages"</h2>
+               <h2>"Messages"</h2>
+               
           <ul>
-
+            
           </ul>
        </section>
+      </main> 
+
+     
 
        <hr>
-       <footer>
-        <p id="p1"></p>
+      <footer class="p1">
+        
        <!--- <p>&copy; 2022</p> -->
-
-       </footer>
+      </footer>
        <script src="js/index.js"></script>
     
-    </body>
+      </body>
 
 </html>
 
