@@ -7,76 +7,85 @@
         <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
       </head>
     <body>
-        <section id="myName">
-            <h1>Liubov Rodin</h1>
-          </section>
-        <section id="picture">
-       <img src="img/IMG_6157.jpeg" alt="my portret"
-       width="200" 
-       height=auto/>
-        </section>
+      <div class='header-container'>
+        
+        <h1>Liubov Rodin</h1>
 
-        <nav class="menu">
-            <ul>
-              <li class="menu"><a href="#about">About</a></li>
-              <li class="menu"><a href="#experience">Experience</a></li>
-              <li class="menu"><a href="#skills">Skills</a></li>
-              <li class="menu"><a href="#connect">Connect</a></li>
+        <nav>
+          <ul class="menu">
+            <li class="menuItems"><a href="#about">About</a></li>
+            <li class="menuItems"><a href="#experience">Experience</a></li>
+            <li class="menuItems"><a href="#skills">Skills</a></li>
+            <li class="menuItems"><a href="#connect">Connect</a></li>
+            
             </ul>
-          </nav>
-      <main>    
+        </nav>
+      </div>
+      <div class="main">  
+        <section id="picture"><img src="img/IMG_6157.jpeg" alt="my portret"
+          width="250" 
+          height=auto/></section>  
      
         <section id = "about">
-          <h2> "About"</h2> 
+          <h2> About</h2> 
           <p> I am full time mom more then 8 years.</p>
           <p> I have two master degrees in physics and finance.</p>
           <p> And now I want to try myself in IT. This is my first step in it.        </p>         
         </section>
         <section id="experience">
-          <h2> "Experience"</h2>
-          <ul>
-            <li> My future project 1</li> 
-            <li> My future project 2</li>
-            <li> My future project 3 </li>
-            <li> My future project 4 </li>
-          </ul>
+          <h2> Experience</h2>
+          <div class="wrapper">
+            <li class="experienceItems"> My future project 1</li> 
+            <li class="experienceItems"> My future project 2</li>
+            <li class="experienceItems"> My future project 3 </li>
+            <li class="experienceItems"> My future project 4 </li>
+          </div>
        </section> 
        <section id="skills">
-        <h2>"Skills"</h2>
+        <h2>Skills</h2>
         <ul>
             
         </ul>
        </section>
 
        <section id = "connect">
-          <h2>"Connect" </h2>
+          <h2>Connect</h2>
           <p><a href="mailto:lyubov.lysenko@gmail.com">Email</a> </p>
           <p><a href="https://github.com/LiubovCass" target="_blank">GitHub</a> </p>
        </section>
-       
+
        <section id="leaveMessage">
-        <h2>"Leave a Message"</h2>
-        <form name="leave_message" id="myForm"> 
-            <label for="name">Name</label><br>
-              <input type="text" name="name" required true><br>
-            <label for="email">Email</label><br>
-              <input type="email" name="email" required true><br>
-            <label for="message">Message</label><br>
+       <div class="wraper">
+        <h2>Leave a Message</h2>
+        
+        <form name="leave_message" id="myForm">
+          <div class="leaveMessage">
+          <div>
+            <label class="labels">Name</label><br>
+            <input type="text" name="name" required true></div><br>
+          <div>
+              <label class="labels">Email</label><br>
+              <input type="email" name="email" required true></div><br>
+          <div>
+              <label class="labels">Message</label><br>
               <textarea name="message" required true cols="30" rows="10"></textarea><br>
             
-              <button type="submit">submit</button><br>
+              <button type="submit">submit</button></div><br>
+            </div>
         </form>
-            </section>
+        </div>
+      
+        </section>
     
 
        <section id="messages">
-               <h2>"Messages"</h2>
+               <h2>Messages</h2>
                
           <ul>
             
           </ul>
        </section>
-      </main> 
+      </div> 
 
      
 
