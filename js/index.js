@@ -20,9 +20,7 @@ for (i=0; i<skills.length; i++) {
     let skill = document.createElement('li')
     skill.innerText = skills[i]
     skillsList.appendChild(skill)
-}
-
-     
+}  
 
 let messageForm = document.querySelector("[name=leave_message]")
 console.log(messageForm)
@@ -80,7 +78,6 @@ newMessage.appendChild(editButton)
     }
 
 
-  
 
 let githubRequest = new XMLHttpRequest();
 githubRequest.open('GET', 'https://api.github.com/users/LiubovCass/repos');
