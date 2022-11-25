@@ -1,23 +1,29 @@
 
+  const renderCopyright = () => {
+    
+
+
 const today = new Date()
 const thisYear = today.getFullYear()
 
-const footer = document.querySelector("footer")
+const copyright = document.querySelector('#copyright')
 //console.log(footer)
-const copyright = document.createElement("p")
-copyright.innerText =`Liubov Rodin ${thisYear}`
+copyright.innerHTML = `&copy Liubov Rodin ${thisYear}`
 //console.log(copyright)
-footer.appendChild(copyright);
+// footer.appendChild(copyright);
+  }
 
-let skills = ['HTML', 'Javascript', 'parenting']
+let skills = ['HTML', 'Javascript', 'CSS', 'parenting']
 let skillsSection = document.querySelector('#skills')
 let skillsList = skillsSection.querySelector('ul')
-for (let i=0; i<skills.length; i++) {
+for (i=0; i<skills.length; i++) {
     let skill = document.createElement('li')
-    skill.innerText=skills[i]
-    //skill.innerHTML ="<a src=skills></a>";
-    skillsSection.appendChild(skill)
+    skill.innerText = skills[i]
+    skillsList.appendChild(skill)
 }
+
+     
+
 let messageForm = document.querySelector("[name=leave_message]")
 console.log(messageForm)
 messageForm.addEventListener('submit',function (event) {
@@ -72,5 +78,38 @@ newMessage.appendChild(editButton)
         const entry = event.target.parentNode
         entry.remove()
     }
+
+
+  
+
+let githubRequest = new XMLHttpRequest();
+githubRequest.open('GET', 'https://api.github.com/users/LiubovCass/repos');
+githubRequest.send();
+
+githubRequest.addEventListener('load', function() {
+  let repositories = [];
+  repositories= JSON.parse(this.response);
+  console.log(repositories);
+
+  const projectSection = document.querySelector('#projects')
+  const projectList = projectSection.querySelector('ul')
+
+for (let i = 0; i < repositories.length; i++) {
+  let project = document.createElement("li")
+  project.innerHTML = `<a href="${repositories[i].html_url}" target="_blank">${repositories[i].name}</a>`;
+  projectList.appendChild(project);
+}    
+      
+})
+
+
+
+        
+
+
+
+
+
+
 
 

@@ -3,86 +3,160 @@
     <head>
         <title> My Very First Webpage </title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     </head>
     <body>
-      <header>
-        <section>
-            <h1><em>Liubov Rodin </em></h1>
-        </section>
+       <div class="header-container">
+           <h1>Liubov Rodin</h1>  
         
-       <img src="img/IMG_6157.jpeg" alt="my portret"
-       width="400" 
-       height="600"/>
+             <nav>
+              
+                <ul class="menu">
 
-        <nav class="menu">
-            <ul>
-              <li><a href="#about">About</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#connect">Connect</a></li>
-            </ul>
-          </nav>
-      </header>
-          
-        <section id = "about">
-          <h2> "About"</h2> 
-          <p> I am full time mom more then 8 years.</p>
-          <p> I have two master degree in physics and finance.</p>
-          <p> And now I want to try myself in IT. This is my fist step in it.        </p>         
-        </section>
-       <section id="experience">
-          <h2> "Experience"</h2>
-          <ul>
-            <li> My future project 1</li> 
-            <li> My future project 2</li>
-            <li> My future project 3 </li>
-            <li> My future project 4 </li>
-          </ul>
-       </section> 
-       <section id="skills">
-        <h2>"Skills"</h2>
-        <ul>
-            
-        </ul>
-       </section>
+                  <li class="menuItems"><a href="#about">About</a></li>
+                  <li class="menuItems"><a href="#experience">Experience</a></li>
+                  <li class="menuItems"><a href="#skills">Skills</a></li>
+                  <li class="menuItems"><a href="#projects">Projects</a></li>
+                  <li class="menuItems"><a href="#leaveMessage">Leave a Message</a></li>
+               </ul>
+           </nav>
+         
+        </div>
+      <div class="main">  
+         
+        
+             <section id="picture"><img src="img/IMG_6157.jpeg" alt="my portret"
+              width="200" 
+              height=auto/></section>  
+  
+            <section id = "about">
+             <h2> About</h2> 
+             <p> I am full time mom more then 8 years.</p>
+             <p> I have two master degrees in physics and finance.</p>
+             <p> And now I want to try myself in IT. This is my first step into it.        </p>         
+            </section>
+            <section id="experience">
+               <h2> Experience</h2>
+               <ul role="list">
+                <li class="experienceItems">
+                  <span>
+                    <strong>Full Time Mom</strong> &mdash;
+                    North Carolina</span>
+                  <span class="emphasis">August 2014 - Present</span>
+                </li>
+                
+                  <li class="experienceItems">
+                    <span>
+                      <strong>Finance Manager</strong> &mdash;
+                      Toris LLC</span>
+                    <span class="emphasis">February 2011 - August 2014</span>
+                  </li> 
+                  <li class="experienceItems"> 
+                    <span>
+                      <strong>Finance Manager</strong> &mdash;
+                      Ralf Ringer LLC</span>
+                    <span class="emphasis">October 2006 - February 2011</span>
+                  </li>
+                  <li class="experienceItems">
+                    <span>
+                      <strong>Accountant</strong> &mdash;
+                      Natalie Tours LLC</span>
+                    <span class="emphasis">March 2005 - October 2006</span>
+                  </li>
+                  
+               </ul>
+            </section> 
+            <section id="skills">
+              <h2>Skills</h2>
+              
+               <ul>
 
-       <section id = "connect">
-          <h2>"Connect" </h2>
-          <p><a href="mailto:lyubov.lysenko@gmail.com">Email</a> </p>
-          <p><a href="https://github.com/LiubovCass" target="_blank">GitHub</a> </p>
-       </section>
+               </ul>
+              
+           </section>
+           <section id="projects">
+             <h2>Projects</h2>
+              <ul>
+               
+              </ul>
+
+          </section>
+           <section id = "connect">
+            <h2>Connect</h2>
+              <p><a href="mailto:lyubov.lysenko@gmail.com">Email</a> </p>
+              <p><a href="https://github.com/LiubovCass" target="_blank">GitHub</a> </p>
+           </section>
+           <section id="leaveMessage">
+              <div class="wraper">
+                <h2>Leave a Message</h2>
+  
+               <form name="leave_message" id="myForm">
+                 <div class="leaveMessage">
+                   <div>
+                    <label class="labels">Name</label><br>
+                    <input type="text" name="name" required true></div><br>
+                   <div>
+                    <label class="labels">Email</label><br>
+                    <input type="email" name="email" required true></div><br>
+                   <div>
+                    <label class="labels">Message</label><br>
+                    <textarea name="message" required true cols="25" rows="8"></textarea><br>
+                    <button type="submit">submit</button></div><br>
+                 </div>
+               </form>  
+             </div>
+            </section>
        
-       <section>
-        <h2>"Leave a Message"</h2>
-        <form name="leave_message" id="myForm"> 
-            <label for="name">Name</label><br>
-              <input type="text" name="name" required true><br>
-            <label for="email">Email</label><br>
-              <input type="email" name="email" required true><br>
-            <label for="message">Message</label><br>
-              <textarea name="message" required true></textarea><br>
-            
-              <button type="submit">submit</button><br>
-        </form>
-       </section>
 
-       <section id="messages">
-        <h2>"Messages"</h2>
-          <ul>
 
-          </ul>
-       </section>
+            <section id="messages">
+             <h2>Messages</h2>
 
-       <hr>
-       <footer>
-        <p id="p1"></p>
-       <!--- <p>&copy; 2022</p> -->
+               <ul>
 
-       </footer>
-       <script src="js/index.js"></script>
-    
+              </ul>
+            </section>
+       
+      </div>
+     <hr>
+       <!---<footer class="p1"> -->
+    <footer>
+      <div class="container">
+      <nav class="nav">
+        <p id="copyright">
+          <!-- HTML will be inserted here via JS -->
+        <!-- </p> -->
+        <ul class="menu">
+          <li class="menuItem">
+            <a class="link link--no-color" href="https://github.com/LiubovCass" target="_blank" title="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+          </li>
+        </ul> 
+
+     <!--- <p>&copy; 2022</p> -->
+    </nav>
+    </div>
+    </footer>
+   
+     <script src="js/index.js"></script>
+
     </body>
-
 </html>
 
+
+
+
+
+
+
+
+
+
+
+
+
+     
