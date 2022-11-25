@@ -12,6 +12,7 @@ copyright.innerHTML = `&copy Liubov Rodin ${thisYear}`
 //console.log(copyright)
 // footer.appendChild(copyright);
   }
+  renderCopyright()
 
 let skills = ['HTML', 'Javascript', 'CSS', 'parenting']
 let skillsSection = document.querySelector('#skills')
