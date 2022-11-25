@@ -1,5 +1,6 @@
 * {
    
+
   font-family:"Fuzzy Bubbles";
   box-sizing:border-box;
   
@@ -61,6 +62,7 @@ li {
   padding-right: 60px;
   background-color: #125773;
 }
+
 
 .menu {
   display: flex;
@@ -364,7 +366,4 @@ section#leaveMessage {
 
 }
   }
-        
-          
-        
         
