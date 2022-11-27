@@ -1,8 +1,5 @@
 
-  const renderCopyright = () => {
-    
-
-
+const renderCopyright = () => {
 const today = new Date()
 const thisYear = today.getFullYear()
 
@@ -14,7 +11,7 @@ copyright.innerHTML = `&copy Liubov Rodin ${thisYear}`
   }
   renderCopyright()
 
-let skills = ['HTML', 'Javascript', 'CSS', 'parenting']
+let skills = ['HTML', 'Javascript', 'CSS', 'GitHub', 'parenting']
 let skillsSection = document.querySelector('#skills')
 let skillsList = skillsSection.querySelector('ul')
 for (i=0; i<skills.length; i++) {
@@ -68,8 +65,6 @@ newMessage.appendChild(removeButton)
 messageList.appendChild(newMessage)
 newMessage.appendChild(editButton)
 
-  //console.log(newMessage)
-
   messageForm.reset()
     });
 
@@ -88,10 +83,6 @@ newMessage.appendChild(editButton)
 //   let repositories = [];
 //   repositories= JSON.parse(this.response);
 //   console.log(repositories);
-
-  
-  
-  
       
 // })
 
